@@ -845,11 +845,21 @@ body.closeOverflow{
 }
 
 .faq-section__questions .faq-section__title::after {
-    content: '\1F863';
+    position: absolute;
+    content: '';
+    background: url(/img/down-arrow.png);
+    width: 16px;
+    right: 0;
+    height: 16px;
 }
 
 .faq-section__details[open] .faq-section__title::after{
-    content: '\1F861';
+    position: absolute;
+    content: '';
+    background: url(/img/up-arrow.png);
+    width: 16px;
+    right: 0;
+    height: 16px;
 }
 
 .faq-section__details .faq-section__title{
@@ -859,6 +869,7 @@ body.closeOverflow{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 }
 
 .faq-section__details .faq-section__title:hover{
