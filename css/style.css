@@ -17,6 +17,10 @@ body{
     width: 100%;
 }
 
+body.closeOverflow{
+    overflow: hidden;
+}
+
 .header{
     display: flex;
     align-items: center;

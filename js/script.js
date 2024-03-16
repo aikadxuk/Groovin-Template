@@ -54,6 +54,7 @@ let imgCards = []
 /* close overlay */
 
 const closeButton = document.querySelector('.close-overlay')
+const closeOverflow = document.querySelector('body')
 
 /* overlay de imagens */
 
@@ -119,10 +120,12 @@ imgCards.forEach((cardClick, cardClickIndex)=>{
         if(imgItem){
             backgroundOverlay.classList.add('active-overlay')
             imgOverlay.src = imgItem.src
+            closeOverflow.classList.add('closeOverflow')
         }
     })
 })
 
 closeButton.addEventListener('click', ()=>{
     backgroundOverlay.classList.remove('active-overlay')
+    closeOverflow.classList.remove('closeOverflow')
 })
